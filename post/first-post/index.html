@@ -16,9 +16,9 @@
     
   },
   "name":"cc aa",
-  "description":"",
+  "description":"\u003cp\u003e记录个人第一次博客搭建之路\u003c\/p\u003e",
   "url":"https:\/\/sasbsc.github.io\/post\/first-post\/",
-  "keywords":"[tech]"
+  "keywords":"[Hugo, 个人博客, Github]"
 }
 
 </script>
@@ -27,40 +27,42 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="generator" content="Hugo 0.99.1 with theme Tranquilpeak 0.5.3-BETA">
 <meta name="author" content="cc aa">
-<meta name="keywords" content="tech">
-<meta name="description" content="">
+<meta name="keywords" content="Hugo, 个人博客, Github">
+<meta name="description" content="记录个人第一次博客搭建之路">
 
 
-<meta property="og:description" content="">
+<meta property="og:description" content="记录个人第一次博客搭建之路">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Test VS Code">
-<meta name="twitter:title" content="Test VS Code">
+<meta property="og:title" content="Hugo &#43; Github Pages &#43; Github Actions 搭建个人博客">
+<meta name="twitter:title" content="Hugo &#43; Github Pages &#43; Github Actions 搭建个人博客">
 <meta property="og:url" content="https://sasbsc.github.io/post/first-post/">
 <meta property="twitter:url" content="https://sasbsc.github.io/post/first-post/">
 <meta property="og:site_name" content="cc aa">
-<meta property="og:description" content="">
-<meta name="twitter:description" content="">
+<meta property="og:description" content="记录个人第一次博客搭建之路">
+<meta name="twitter:description" content="记录个人第一次博客搭建之路">
 <meta property="og:locale" content="en-us">
 
   
-    <meta property="article:published_time" content="2022-05-21T09:36:04">
+    <meta property="article:published_time" content="2022-05-26T09:36:04">
   
   
-    <meta property="article:modified_time" content="2022-05-21T09:36:04">
+    <meta property="article:modified_time" content="2022-05-26T09:36:04">
   
-  
-  
-    
-      <meta property="article:section" content="category">
-    
-      <meta property="article:section" content="subcategory">
-    
   
   
     
-      <meta property="article:tag" content="tag1">
+      <meta property="article:section" content="生产力">
     
-      <meta property="article:tag" content="tag2">
+      <meta property="article:section" content="个人博客">
+    
+  
+  
+    
+      <meta property="article:tag" content="Hugo">
+    
+      <meta property="article:tag" content="Github Pages">
+    
+      <meta property="article:tag" content="Github Actions">
     
   
 
@@ -81,7 +83,7 @@
 
 
 
-    <title>Test VS Code</title>
+    <title>Hugo &#43; Github Pages &#43; Github Actions 搭建个人博客</title>
 
     <link rel="icon" href="https://sasbsc.github.io/favicon.png">
     
@@ -240,15 +242,15 @@
             <div class="post-header main-content-wrap text-left">
   
     <h1 class="post-title">
-      Test VS Code
+      Hugo &#43; Github Pages &#43; Github Actions 搭建个人博客
     </h1>
   
   
   <div class="postShorten-meta post-meta">
     
-      <time datetime="2022-05-21T09:36:04&#43;08:00">
+      <time datetime="2022-05-26T09:36:04&#43;08:00">
         
-  May 21, 2022
+  May 26, 2022
 
       </time>
     
@@ -257,9 +259,9 @@
   
     <span>in</span>
     
-      <a class="category-link" href="https://sasbsc.github.io/categories/category">category</a>, 
+      <a class="category-link" href="https://sasbsc.github.io/categories/%e7%94%9f%e4%ba%a7%e5%8a%9b">生产力</a>, 
     
-      <a class="category-link" href="https://sasbsc.github.io/categories/subcategory">subcategory</a>
+      <a class="category-link" href="https://sasbsc.github.io/categories/%e4%b8%aa%e4%ba%ba%e5%8d%9a%e5%ae%a2">个人博客</a>
     
   
 
@@ -269,7 +271,149 @@
           
           <div class="post-content markdown">
             <div class="main-content-wrap">
-              
+              <p>记录个人第一次博客搭建之路</p>
+<h1 id="需要用到的软件或工具">需要用到的软件或工具</h1>
+<ul>
+<li>Hugo 静态网站生成器</li>
+<li>Github Pages 网站部署</li>
+<li>Github Actions 自动化网站部署</li>
+<li>Gittalk 评论系统</li>
+<li>Visual Studio Code (VS Code) 编辑器</li>
+</ul>
+<h1 id="总体思路">总体思路</h1>
+<p>VS code 编辑文章，并使用本地预览。编辑好新文章后使用 git 推送到 GitHub 私有源码仓库 blog-source-code，此时触发 Github Actions，按照指定流程生成新的网页文件并存入公开页面仓库 username.github.io，也即 Github Pages 仓库。</p>
+<h1 id="安装hugo">安装Hugo</h1>
+<p>Hugo是一个用Go语言编写的静态网站生成器，非常适合搭建静态博客。类似的生成器还有Hexo、Jekyll等。参考网上的信息，考虑到搭建难易性及页面加载速度，最终选择Hugo。</p>
+<p>Hugo <a href="https://gohugo.io/">官方主页</a></p>
+<p>下载对应系统版本的编译好的Hugo二进制文件。解压后放入指定安装目录，然后将该目录添加至系统环境变量（win+R - sysdm.cpl - 高级 - 环境变量 - 系统变量 - Path）</p>
+<h1 id="配置github-pages-和-github-actions">配置GitHub Pages 和 Github Actions</h1>
+<h2 id="生成两个仓库">生成两个仓库</h2>
+<ul>
+<li>blog-source-code 私有（Private）</li>
+<li>username.github.io 公开（Public）</li>
+</ul>
+<h2 id="生成-personal_token">生成 personal_token</h2>
+<p>由于源码和网页分开存放，生成的网页文件推送到 Github Pages 仓库需要相应权限，此处采用 personal_token 的方式。</p>
+<p>依次点击 Github 头像 - Setting - Developer Settings - Personal access tokens - Generate new token，填入名字及备注（可选），并全选 repo 及 admin:repo_hook 选项，点击 Generate token 生成 token，复制保存该token。 <strong>只出现一次，务必先复制保存</strong></p>
+<h2 id="配置源码仓库">配置源码仓库</h2>
+<p>将空的源码仓库克隆到本地</p>
+<pre><code>git clone git@github.com:username/blog-source-code.git
+</code></pre>
+<p>初始化 Hugo 站点，在指定的站点目录执行语句</p>
+<pre><code>hugo new site ./blog-source-code
+</code></pre>
+<p>安装主题</p>
+<p>在 <a href="https://themes.gohugo.io/">Hugo Themes</a> 网站选择合适的主题，下文以 Tranquilpeak 为例。</p>
+<p>将选中的主题克隆到本地源码文件夹内 themes 文件夹下</p>
+<pre><code>cd blog-source-code
+cd themes
+git clone https://github.com/kakawait/hugo-tranquilpeak-theme.git hugo-tranquilpeak-theme
+</code></pre>
+<p>将 /themes/tranquilpeak/exampleSite 下的 config.toml 复制过来覆盖 /blog-source-code 下的原文件，打开 config.toml 阅读并修改相应配置。</p>
+<p>添加子模块</p>
+<pre><code>git submodule add https://github.com/kakawait/hugo-tranquilpeak-theme.git
+</code></pre>
+<p>推送到 Github 源码仓库</p>
+<pre><code>git add .
+git commit -m &quot;New site!&quot;
+git push -u origin master 
+</code></pre>
+<h2 id="源码仓库添加-personal_token">源码仓库添加 personal_token</h2>
+<p>进入源码仓库（blog-source-code），依次点击 Setting - Secrets - Action - New Repository secret，填入上面生成的 token，命名为 ACTION_ACCESS_TOKEN。<strong>注意此处可随意命名，只需与后续 Github Actions 配置文件保持一致即可。</strong></p>
+<h2 id="配置-github-actions">配置 Github Actions</h2>
+<p>进入源码仓库（blog-source-code），依次点击Actions - set up a workflow yourself， 复制修改下述代码，并保存为main.yml，commit即可。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yml" data-lang="yml"><span style="display:flex;"><span><span style="color:#f92672">name</span>: <span style="color:#ae81ff">GitHub Pages</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">on</span>:
+</span></span><span style="display:flex;"><span><span style="color:#f92672">push</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">branches</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#ae81ff">main</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">jobs</span>:
+</span></span><span style="display:flex;"><span><span style="color:#f92672">deploy</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">runs-on</span>: <span style="color:#ae81ff">ubuntu-20.04</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">steps</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Checkout repositories</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">uses</span>: <span style="color:#ae81ff">actions/checkout@v3</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">with</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">submodules</span>: <span style="color:#66d9ef">true</span>  <span style="color:#75715e"># Fetch Hugo themes (true OR recursive)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">fetch-depth</span>: <span style="color:#ae81ff">0</span>    <span style="color:#75715e"># Fetch all history for .GitInfo and .Lastmod</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Setup Hugo</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">uses</span>: <span style="color:#ae81ff">peaceiris/actions-hugo@v2</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">with</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">hugo-version</span>: <span style="color:#e6db74">&#39;latest&#39;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">extended</span>: <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Build</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">run</span>: <span style="color:#ae81ff">hugo</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Deploy</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">uses</span>: <span style="color:#ae81ff">peaceiris/actions-gh-pages@v3</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">with</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">personal_token</span>: <span style="color:#ae81ff">${{ secrets.ACTION_ACCESS_TOKEN }}</span> <span style="color:#75715e"># 此处 ACTION_ACCESS_TOKEN 与源码仓库添加的 personal_token 命名一致</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">external_repository</span>: <span style="color:#ae81ff">username/username.github.io</span> <span style="color:#75715e"># 发布到哪个仓库，此处选 Github Pages 所在仓库</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">publish_branch</span>: <span style="color:#ae81ff">main</span> <span style="color:#75715e"># 发布到哪个 branch</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">publish_dir</span>: <span style="color:#ae81ff">./public</span> <span style="color:#75715e"># 发布哪个文件夹的内容，由于 hugo 默认生成静态网页到 public 文件夹，所以这里发布 public 文件夹里的内容</span>
+</span></span></code></pre></div><p>commit 后，回到本地 blog-source-code 文件夹，执行下述 git 命令行来拉取更改至本地：</p>
+<pre><code>git pull origin main
+</code></pre>
+<p>此时，源码仓库的 GitHub Actions 已配置完成。当对 blog-source-code 仓库进行 push 操作时，会自动触发上述Action，进而将编译好的页面推送至 username.github.io 仓库，实现博客的自动化编译发布。</p>
+<h1 id="评论系统-gitalk">评论系统-gitalk</h1>
+<p><a href="https://github.com/gitalk/gitalk">Gitalk</a> 是一个基于Github Issue 的评论插件。</p>
+<h2 id="创建仓库打开issues功能">创建仓库，打开issues功能</h2>
+<p>在 Github 创建一个仓库用于存放评论。如果博客本身使用的就是 Github Pages，此步可省略。</p>
+<h2 id="注册-github-application">注册 Github Application</h2>
+<p>依次点击 Github 头像 - Setting - Developer Settings - OAuth Apps - New OAuth Apps</p>
+<ul>
+<li>Application name: 随便写</li>
+<li>Homepage URL：博客的网址，https://username.github.io/</li>
+<li>Authorization callback URL: github权限验证的回调地址，默认是域名，https://username.github.io/</li>
+</ul>
+<p>创建成功后获取 Client ID 和 Client Secret 并保存。</p>
+<h2 id="在博客中集成gitalk">在博客中集成gitalk</h2>
+<p>打开 config.toml 修改相应配置</p>
+<pre><code>[params.comment.gitalk]
+enable = true
+clientId =&quot;xxx&quot;
+clientSecret = &quot;xxx&quot;
+repo = &quot;username.github.io&quot;
+owner = &quot;username&quot;
+admin = &quot;username&quot;
+</code></pre>
+<p>推送到远端</p>
+<pre><code>git add .
+git commit -m &quot;add gitalk&quot;
+git push -u origin master 
+</code></pre>
+<h2 id="效果图">效果图</h2>
+<p><img src="https://sasbsc.github.io/images/20220526142939.png" alt=""></p>
+<h1 id="vs-code-配置">VS code 配置</h1>
+<p>主要使用两个插件:</p>
+<ol>
+<li>Markdown All in one  Markdown 写作环境配置</li>
+<li>Paste Image 图片插入，参考如下配置</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JSON" data-lang="JSON"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;pasteImage.basePath&#34;</span>: <span style="color:#e6db74">&#34;${projectRoot}/static&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;pasteImage.path&#34;</span>: <span style="color:#e6db74">&#34;${projectRoot}/static/images&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;pasteImage.prefix&#34;</span>: <span style="color:#e6db74">&#34;/&#34;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ul>
+<li>basePath 图片基础路径，即在markdown文件里面不显示static，只从images开始显示</li>
+<li>path 图片存放的位置</li>
+<li>prefix 路径前缀</li>
+</ul>
+<h1 id="其他">其他</h1>
+<h2 id="关于图床">关于图床</h2>
+<p>尝试过使用 picgo + GitHub 仓库 + CDN 加速 的方式建立图床，实现图片远程访问，但 CDN(jsdeliver) 加速用了一天就挂了，其他免费的稳定性也都一般。考虑到目前所用图片不多，就先暂时放到默认文件夹 /static/images 和源代码一起推送至 Github 仓库，以后有时间再折腾。</p>
+<h1 id="参考资料">参考资料</h1>
+<ol>
+<li><a href="https://criwits.top/post/hugo-new-born/">用 Hugo 配合 GitHub Actions 和 GitHub Pages 搭建博客</a></li>
+<li><a href="https://zz2summer.github.io/github-pages-hugo-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">Github Pages + Hugo 搭建个人博客</a></li>
+<li><a href="https://juejin.cn/post/6844903939091988494">个人博客评论插件之gittalk</a></li>
+<li><a href="https://zahui.fan/posts/2a39e018/">使用vscode来写hugo博客并处理图片插入问题</a></li>
+</ol>
               
 
 
@@ -283,9 +427,11 @@
                   <div class="post-footer-tags">
                     <span class="text-color-light text-small">TAGGED IN</span><br/>
                     
-  <a class="tag tag--primary tag--small" href="https://sasbsc.github.io/tags/tag1/">tag1</a>
+  <a class="tag tag--primary tag--small" href="https://sasbsc.github.io/tags/hugo/">Hugo</a>
 
-  <a class="tag tag--primary tag--small" href="https://sasbsc.github.io/tags/tag2/">tag2</a>
+  <a class="tag tag--primary tag--small" href="https://sasbsc.github.io/tags/github-pages/">Github Pages</a>
+
+  <a class="tag tag--primary tag--small" href="https://sasbsc.github.io/tags/github-actions/">Github Actions</a>
 
                   </div>
                 

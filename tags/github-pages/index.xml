@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on cc aa</title>
-    <link>https://sasbsc.github.io/post/</link>
-    <description>Recent content in Posts on cc aa</description>
+    <title>Github Pages on cc aa</title>
+    <link>https://sasbsc.github.io/tags/github-pages/</link>
+    <description>Recent content in Github Pages on cc aa</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 May 2022 09:36:04 +0800</lastBuildDate><atom:link href="https://sasbsc.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 May 2022 09:36:04 +0800</lastBuildDate><atom:link href="https://sasbsc.github.io/tags/github-pages/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugo &#43; Github Pages &#43; Github Actions 搭建个人博客</title>
       <link>https://sasbsc.github.io/post/first-post/</link>

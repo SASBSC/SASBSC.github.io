@@ -6,14 +6,14 @@
     <description>Recent content on cc aa</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 21 May 2022 09:36:04 +0800</lastBuildDate><atom:link href="https://sasbsc.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 May 2022 09:36:04 +0800</lastBuildDate><atom:link href="https://sasbsc.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Test VS Code</title>
+      <title>Hugo &#43; Github Pages &#43; Github Actions 搭建个人博客</title>
       <link>https://sasbsc.github.io/post/first-post/</link>
-      <pubDate>Sat, 21 May 2022 09:36:04 +0800</pubDate>
+      <pubDate>Thu, 26 May 2022 09:36:04 +0800</pubDate>
       
       <guid>https://sasbsc.github.io/post/first-post/</guid>
-      <description></description>
+      <description>&lt;p&gt;记录个人第一次博客搭建之路&lt;/p&gt;</description>
     </item>
     
   </channel>
