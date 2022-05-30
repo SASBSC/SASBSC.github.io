@@ -1,37 +1,52 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url>
-    <loc>https://sasbsc.github.io/categories/</loc>
-    <lastmod>2022-05-26T09:36:04+08:00</lastmod>
-  </url><url>
-    <loc>https://sasbsc.github.io/</loc>
-    <lastmod>2022-05-26T09:36:04+08:00</lastmod>
-  </url><url>
-    <loc>https://sasbsc.github.io/tags/github-actions/</loc>
-    <lastmod>2022-05-26T09:36:04+08:00</lastmod>
-  </url><url>
-    <loc>https://sasbsc.github.io/tags/github-pages/</loc>
-    <lastmod>2022-05-26T09:36:04+08:00</lastmod>
-  </url><url>
-    <loc>https://sasbsc.github.io/tags/hugo/</loc>
-    <lastmod>2022-05-26T09:36:04+08:00</lastmod>
-  </url><url>
-    <loc>https://sasbsc.github.io/post/first-post/</loc>
-    <lastmod>2022-05-26T09:36:04+08:00</lastmod>
-  </url><url>
-    <loc>https://sasbsc.github.io/post/</loc>
-    <lastmod>2022-05-26T09:36:04+08:00</lastmod>
-  </url><url>
-    <loc>https://sasbsc.github.io/tags/</loc>
-    <lastmod>2022-05-26T09:36:04+08:00</lastmod>
-  </url><url>
-    <loc>https://sasbsc.github.io/categories/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</loc>
-    <lastmod>2022-05-26T09:36:04+08:00</lastmod>
-  </url><url>
-    <loc>https://sasbsc.github.io/categories/%E7%94%9F%E4%BA%A7%E5%8A%9B/</loc>
-    <lastmod>2022-05-26T09:36:04+08:00</lastmod>
-  </url><url>
-    <loc>https://sasbsc.github.io/archives/</loc>
-  </url>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://sasbsc.github.io/</loc>
+  <lastmod>2022-05-30T03:41:08+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://sasbsc.github.io/categories/</loc>
+  <lastmod>2022-05-30T03:41:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sasbsc.github.io/tags/</loc>
+  <lastmod>2022-05-30T03:41:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sasbsc.github.io/archives/</loc>
+  <lastmod>2022-05-30T03:41:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sasbsc.github.io/post/first-post/</loc>
+  <lastmod>2022-05-30T03:41:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sasbsc.github.io/tags/github-actions/</loc>
+  <lastmod>2022-05-30T03:41:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sasbsc.github.io/tags/github-pages/</loc>
+  <lastmod>2022-05-30T03:41:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sasbsc.github.io/tags/hugo/</loc>
+  <lastmod>2022-05-30T03:41:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
 </urlset>
