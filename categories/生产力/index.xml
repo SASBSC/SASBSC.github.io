@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>生产力 on cc aa</title>
-    <link>https://sasbsc.github.io/categories/%E7%94%9F%E4%BA%A7%E5%8A%9B/</link>
+    <link>https://www.iwds.site/categories/%E7%94%9F%E4%BA%A7%E5%8A%9B/</link>
     <description>Recent content in 生产力 on cc aa</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 May 2022 09:36:04 +0800</lastBuildDate><atom:link href="https://sasbsc.github.io/categories/%E7%94%9F%E4%BA%A7%E5%8A%9B/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 May 2022 09:36:04 +0800</lastBuildDate><atom:link href="https://www.iwds.site/categories/%E7%94%9F%E4%BA%A7%E5%8A%9B/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugo &#43; Github Pages &#43; Github Actions 搭建个人博客</title>
-      <link>https://sasbsc.github.io/post/first-post/</link>
+      <link>https://www.iwds.site/post/first-post/</link>
       <pubDate>Thu, 26 May 2022 09:36:04 +0800</pubDate>
       
-      <guid>https://sasbsc.github.io/post/first-post/</guid>
+      <guid>https://www.iwds.site/post/first-post/</guid>
       <description>&lt;p&gt;记录个人第一次博客搭建之路&lt;/p&gt;</description>
     </item>
     
