@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on cc aa</title>
-    <link>https://www.iwds.site/post/</link>
+    <link>https://www.blog.iwds.site/post/</link>
     <description>Recent content in Posts on cc aa</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 May 2022 09:36:04 +0800</lastBuildDate><atom:link href="https://www.iwds.site/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 May 2022 09:36:04 +0800</lastBuildDate><atom:link href="https://www.blog.iwds.site/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugo &#43; Github Pages &#43; Github Actions 搭建个人博客</title>
-      <link>https://www.iwds.site/post/first-post/</link>
+      <link>https://www.blog.iwds.site/post/first-post/</link>
       <pubDate>Thu, 26 May 2022 09:36:04 +0800</pubDate>
       
-      <guid>https://www.iwds.site/post/first-post/</guid>
+      <guid>https://www.blog.iwds.site/post/first-post/</guid>
       <description>&lt;p&gt;记录个人第一次博客搭建之路&lt;/p&gt;</description>
     </item>
     
